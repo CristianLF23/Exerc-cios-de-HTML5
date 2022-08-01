@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastro da liga dos astronautas</h1>
+            <label for="q">Preencha com todos os seus dados corretamente!</label><br>
+            <label for="nome">Nome:</label> 
+            <input type="text" id="nome" name="nome" required><br> <br> 
+            <label for="email"> Email: </label> 
+            <input type="email" id="email" name="email" required>
+            <label for="password"> - Password: </label> 
+            <input type="password" id="senha" name="senha" required> <br> <br>
+            <label for="data"> Data de nascimento: </label> 
+            <input type="date" id="data" name="data" required>
+            <label for="file"> - Foto </label> 
+            <input type="file" id="file" name="file" required><br> <br>
+            <label for="Nacionalidade"> Nacionalidade:</label>
+            <input list="nacionalidades" name="nacionalidade" id="nacionalidade">
+                <datalist id="nacionalidades">
+                    <option value="Brasileiro">
+                    <option value="Americano">
+                    <option value="Russo">
+                </datalist>
+            - Gênero: 
+            <input type="radio" id="M" name="genero" value="M">
+            <label for="M">M</label>
+            <input type="radio" id="F" name="genero" value="F">
+            <label for="F">F</label><br><br>
+            <div>Suas principais qualidades: <br>
+            <label for="inteligência"> Inteligência </label>
+            <input type="checkbox" id="qualidades" name="inteligencia" value="inteligencia">
+            <label for="resiliencia"> | Resiliência </label>
+            <input type="checkbox" id="qualidades" name="Resiliência" value="Resiliência">
+            <label for="inteligência"> | Preparo Físico </label>
+            <input type="checkbox" id="qualidades" name="Preparo Físico" value="Preparo Físico">
+            <label for="Educação"> | Educação </label>
+            <input type="checkbox" id="qualidades" name="Educação" value="Educação"> <br><br>
+            </div>
+            <textarea placeholder="Digite aqui o motivo do seu cadastro" rows="10" cols="40" maxlength="500"></textarea><br><br>
+            <input type="submit" value="Criar cadastro">
+        </form>
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+form action indica o mecanismo de busca do meu formulario
+label é basicamente um pequeno texto antes do formulario, colocando o for="q" é possível que o clique no texto leve a caixa indicada do formulario
+o id identifica o campo de texto, bem como o nome. o placeholder é o texto que aparece dentro da caixa do formulario
+required significa que é necessário o preenchimento do campo (tipo de validação, email, min e max no caso de number, máximo de caracteres, etc, são outras)
+autocomplete indica que o navegador não deve sugerir uma opção para completar automaticamente o campo
+datalist é basicamente um campo com opções prontas para o usuário que serão mostradas em forma de lista atraves da tag option
+
